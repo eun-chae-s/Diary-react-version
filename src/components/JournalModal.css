@@ -1,0 +1,53 @@
+.journal-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(172, 147, 67, 0.288);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  width: 700px;
+  height: 70%;
+  position: fixed;
+  top: 10%;
+  left: auto;
+  background-color: rgb(255, 236, 153);
+  display: block;
+  text-align: center;
+}
+.date {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+  color: rgb(153, 132, 36);
+}
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 10px;
+  font-weight: 600;
+}
+.content {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  font-size: 16px;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: auto;
+}
+.content p {
+  padding: 10px;
+}

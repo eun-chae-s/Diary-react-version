@@ -1,0 +1,83 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(172, 147, 67, 0.288);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  width: 700px;
+  height: 70%;
+  position: fixed;
+  top: 10%;
+  left: auto;
+  background-color: rgb(255, 236, 153);
+  display: block;
+  text-align: center;
+}
+.date {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+  color: rgb(153, 132, 36);
+}
+.save {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  width: 80px;
+  height: 35px;
+  margin: 10px;
+  margin-top: 20px;
+  background-color: rgb(211, 181, 46);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.save:hover {
+  color: rgb(211, 181, 46);
+  background-color: white;
+}
+.close {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  width: 80px;
+  height: 35px;
+  margin: 10px;
+  background-color: rgb(194, 166, 42);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.close:hover {
+  color: rgb(194, 166, 42);
+  background-color: white;
+}
+textarea {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 10px;
+}
+.title-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 300px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  font-size: 15px;
+}

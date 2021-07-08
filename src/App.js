@@ -9,6 +9,7 @@ function App() {
   const [show, setShow] = useState(false);
   const [showProgress, setShowProgress] = useState(false);
   const [title, setTitle] = useState('');
+  const [song, setSong] = useState('');
   
   
   const saveLocalJournals = () => {
@@ -55,7 +56,9 @@ function App() {
         inputText={inputText}
         setInputText={setInputText} 
         journals={journals} 
-        setJournals={setJournals}/>
+        setJournals={setJournals}
+        song={song}
+        setSong={setSong}/>
       <div className="check">
         <button
           className="c-button"

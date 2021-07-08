@@ -2,13 +2,16 @@
 import React from 'react';
 import './Editor.css';
 
-function Editor({onClose, show, title, setTitle, inputText, setInputText, setJournals, journals}) {
+function Editor({onClose, show, title, setTitle, inputText, setInputText, setJournals, journals, song, setSong}) {
     const today = new Date();
     const today_date = today.getFullYear() + '.' + (today.getMonth() + 1)
     + '.' + today.getDate();
 
     const titleHandler = (e) => {
         setTitle(e.target.value);
+    }
+    const songHandler = (e) => {
+        setSong(e.target.value);
     }
     const inputTextHandler = (e) => {
         setInputText(e.target.value);   
@@ -19,6 +22,7 @@ function Editor({onClose, show, title, setTitle, inputText, setInputText, setJou
         var new_journal = {
             date: today_date,
             title: title,
+            song: song,
             text: inputText,
             id: journals.length
         };
@@ -40,6 +44,10 @@ function Editor({onClose, show, title, setTitle, inputText, setInputText, setJou
                     <div className="title">
                         <a>Title? </a>
                         <input className="title-text" type="text" placeholder="Describe your day in one word" onChange={titleHandler}></input>
+                    </div>
+                    <div className="music">
+                        <a>Music? </a>
+                        <input className="song" type="text" placeholder="Which song would describe your day?" onChange={songHandler}></input>
                     </div>
                     <textarea 
                         cols="60" 

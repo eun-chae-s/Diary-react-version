@@ -15,6 +15,9 @@ function JournalModal({onClose, journal, showJournal}) {
                     <div className="title">
                         <a>{journal.title}</a>
                     </div>
+                    <div className="music">
+                        <a> &#127911; {journal.song}</a>
+                    </div>
                     <div className="content">
                         <p>{journal.text}</p>
                     </div>

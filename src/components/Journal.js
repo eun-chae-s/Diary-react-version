@@ -15,7 +15,9 @@ function Journal({journal, journals, setJournals}) {
         <div className="journal" id={journal.id}>
             <li className="journal-item">
                 <a id="d"><b>{journal.date}</b></a>
-                <a id="t"><i>{journal.title}</i></a>
+                <a id="t">
+                    <i>{journal.title}</i>
+                </a>
                 
             </li>
             <button className="play"
